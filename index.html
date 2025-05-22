@@ -1,77 +1,76 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MissHn - ارتباط با ما</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MissHn Links</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="logo.png">
-  <script src="https://kit.fontawesome.com/2fddbee015.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0fa2d9ce4b.js" crossorigin="anonymous"></script>
   <style>
     body {
+      background: linear-gradient(135deg, #ff66cc, #cc66ff);
       font-family: 'Vazirmatn', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom right, #ffe6f0, #f0e6ff);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 30px 20px;
+      direction: rtl;
       text-align: right;
     }
-    img.logo {
-      width: 140px;
+    .logo {
+      width: 180px;
       height: auto;
-      margin-bottom: 25px;
-    }
-    .welcome {
-      font-size: 20px;
-      font-weight: 600;
-      color: #333;
+      border-radius: 12px;
       margin-bottom: 30px;
     }
-    .button {
+    .btn {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       background-color: white;
-      color: #333;
-      border: 1px solid #ccc;
-      border-radius: 15px;
-      padding: 10px 16px;
-      margin: 8px 0;
-      width: 260px;
-      text-decoration: none;
+      border: none;
+      border-radius: 14px;
+      padding: 12px 20px;
       font-size: 18px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      font-weight: 700;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s;
     }
-    .button:hover {
-      background-color: #f9f9f9;
+    .btn:hover {
       transform: scale(1.03);
     }
-    .button i {
-      margin-left: 12px;
+    .btn i {
       font-size: 22px;
+      margin-left: 10px;
+      color: #cc66ff;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="MissHn Logo" class="logo" />
-  <div class="welcome">برای ارتباط با MissHn یکی از گزینه‌های زیر را انتخاب کنید:</div>
+  <img class="logo" src="logo.png" alt="MissHn Logo">
 
-  <a href="https://t.me/MissHn2024" class="button" target="_blank">
+  <a class="btn" href="https://t.me/MissHn2024" target="_blank">
     <i class="fab fa-telegram"></i> سفارش عمده در تلگرام
   </a>
 
-  <a href="https://wa.me/989301059923" class="button" target="_blank">
+  <a class="btn" href="https://wa.me/989301059923" target="_blank">
     <i class="fab fa-whatsapp"></i> سفارش تکی در واتساپ
   </a>
 
-  <a href="https://maps.app.goo.gl/ywVBLLCo8z69Z9naA?g_st=ac" class="button" target="_blank">
+  <a class="btn" href="https://maps.app.goo.gl/ywVBLLCo8z69Z9naA?g_st=ac" target="_blank">
     <i class="fas fa-map-marker-alt"></i> خرید حضوری (فقط عمده)
   </a>
+
+  <a class="btn" href="https://instagram.com/MissHn" target="_blank">
+    <i class="fab fa-instagram"></i> اینستاگرام ما
+  </a>
+
 </body>
 </html>
