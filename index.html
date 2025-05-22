@@ -3,68 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MissHn</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@700&display=swap" rel="stylesheet" />
+  <title>MissHn - ارتباط با ما</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://kit.fontawesome.com/2fddbee015.js" crossorigin="anonymous"></script>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(to bottom right, #e7b7f7, #ffccf9);
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #f0e6ff);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: start;
-      min-height: 100vh;
-      padding-top: 30px;
+      padding: 40px 20px;
+      text-align: right;
     }
-    .logo {
-      max-width: 160px;
+    img.logo {
+      width: 140px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+    .welcome {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
       margin-bottom: 30px;
     }
     .button {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 18px;
-      margin: 10px;
-      font-size: 20px;
-      font-weight: bold;
+      justify-content: flex-start;
       background-color: white;
       color: #333;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 10px 16px;
+      margin: 8px 0;
+      width: 260px;
       text-decoration: none;
-      width: 280px;
-      max-width: 90%;
+      font-size: 18px;
+      font-weight: bold;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
     .button:hover {
-      background-color: #f5f5f5;
-      transform: translateY(-2px);
+      background-color: #f9f9f9;
+      transform: scale(1.03);
     }
-    .icon {
-      width: 24px;
-      height: 24px;
+    .button i {
+      margin-left: 12px;
+      font-size: 22px;
     }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="MissHn Logo" class="logo" />
-  <a class="button" href="https://t.me/MissHn2024" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" class="icon" alt="Telegram Icon" />
-    سفارش عمده در تلگرام
+  <div class="welcome">برای ارتباط با MissHn یکی از گزینه‌های زیر را انتخاب کنید:</div>
+
+  <a href="https://t.me/MissHn2024" class="button" target="_blank">
+    <i class="fab fa-telegram"></i> سفارش عمده در تلگرام
   </a>
-  <a class="button" href="https://wa.me/989301059923" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="icon" alt="WhatsApp Icon" />
-    سفارش تکی در واتساپ
+
+  <a href="https://wa.me/989301059923" class="button" target="_blank">
+    <i class="fab fa-whatsapp"></i> سفارش تکی در واتساپ
   </a>
-  <a class="button" href="https://maps.app.goo.gl/ywVBLLCo8z69Z9naA" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon" alt="Location Icon" />
-    خرید حضوری (فقط عمده)
+
+  <a href="https://maps.app.goo.gl/ywVBLLCo8z69Z9naA?g_st=ac" class="button" target="_blank">
+    <i class="fas fa-map-marker-alt"></i> خرید حضوری (فقط عمده)
   </a>
 </body>
 </html>
